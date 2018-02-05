@@ -24,7 +24,7 @@ public class Controller
 	{
 		Stage confirmBox = new Stage();
 		confirmBox.setTitle(title);
-		confirmBox.initModality(Modality.APPLICATION_MODAL);
+		confirmBox.initModality(Modality.APPLICATION_MODAL); //MOOOOODAL
 		
 		Label msg = new Label(message);
 		VBox layout = new VBox(10);
