@@ -2,10 +2,10 @@ package model;
 
 public class Song 
 {
-	private String name; //make private or public?
-	private String artist;
-	private String year;
-	private String album;
+	public String name; 
+	public String artist;
+	public String year;
+	public String album;
 	
 	public Song(String name, String artist)
 	{
@@ -25,6 +25,11 @@ public class Song
 	public String toString()
 	{
 		return this.name + "\n" + this.artist + "\n" + this.year + "\n" + this.album + "\n";
+	}
+	
+	public String listString()
+	{
+		return this.name + " - " + this.artist;
 	}
 }
 

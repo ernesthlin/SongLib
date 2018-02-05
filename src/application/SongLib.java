@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+import view.Controller;
 
 public class SongLib extends Application
 {
@@ -18,6 +19,9 @@ public class SongLib extends Application
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(SongLib.class.getResource("/view/SongLib.fxml"));
 		mainLayout = (BorderPane) loader.load();
+		Controller controlla = new Controller();
+		controlla.start(window);
+		
 		Scene scene = new Scene(mainLayout);
 		window.setScene(scene);
 		window.setOnCloseRequest(e ->
